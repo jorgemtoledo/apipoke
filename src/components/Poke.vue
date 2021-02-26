@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="content">
-          <button class="button is-medium is-fullwidth" @click="mudarImagem">Mudar imagem</button>
+          <button class="button is-medium is-fullwidth" @click="mudarImagem">Mudar imagem ({{ isFront == true ? 'Frente' : 'Costas' }})</button>
         </div>
       </div>
     </div>
