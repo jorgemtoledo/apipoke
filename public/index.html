@@ -5,13 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Busca Pokes</title>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+      <!-- START NAV -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+              <img src="https://cdn.emk.dev/templates/bulma-logo-light.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item">
+                Examples
+              </a>
+              <a class="navbar-item">
+                Features
+              </a>
+              <a class="navbar-item">
+                Team
+              </a>
+              <a class="navbar-item">
+                Archives
+              </a>
+              <a class="navbar-item">
+                Help
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END NAV -->
+
+      <div id="app"></div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <div class="soc">
+              <a href="#"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            </div>
+            <p><strong>Busca Poke</strong> by <a href="http://jgthms.com">Jorge Toledo</a></p>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>

@@ -1,15 +1,22 @@
 <template>
-  <div id="app">
-    <div class="column is-half is-offset-one-quarter">
-      <h2 id="poke-title">Poke list</h2>
-      <input type="text" name="" placeholder="Buscar poke pelo nome" v-model="busca" class="input is-rounded">
-      <button class="button is-fullwidth is-success" id="buscaBtn" @click="buscar">Buscar</button>
-      <div v-for="(poke,index) in filteredPokes" :key="poke.url">
-        <!-- <h1>{{ index + 1 }} {{ poke.name }}</h1> -->
-        <Poke :name="poke.name" :url="poke.url" :num="index + 1" />
+<div class="container">
+  <section class="section">
+    <!-- https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html#L65 -->
+    <!-- https://bulmathemes.com/ -->
+    <!-- https://bulmatemplates.github.io/bulma-templates/templates/cards.html -->
+    <div id="app" class="container has-text-centered">
+      <div class="column is-half is-offset-one-quarter">
+        <h2 id="poke-title">Poke list</h2>
+        <input type="text" name="" placeholder="Buscar poke pelo nome" v-model="busca" class="input is-rounded">
+        <button class="button is-fullwidth is-success" id="buscaBtn" @click="buscar">Buscar</button>
+        <div v-for="(poke,index) in filteredPokes" :key="poke.url">
+          <!-- <h1>{{ index + 1 }} {{ poke.name }}</h1> -->
+          <Poke :name="poke.name" :url="poke.url" :num="index + 1" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>  
+</div>
 </template>
 
 <script>
@@ -61,6 +68,14 @@ export default {
 </script>
 
 <style>
+  .navbar {
+    background: var(--card-bg);
+  }
+
+  .navbar-item {
+    color: ghostwhite;
+  }
+
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
